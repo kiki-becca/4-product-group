@@ -5,10 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
 
     <body>
@@ -43,53 +45,24 @@
             <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
         </nav>
 
-        <!-- slideshow header -->
-        <header>
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
+        <!-- slideshow -->
+        <div class="w3-container">
+            <h2>Welcome!</h2>
+            <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+        </div>
 
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="img/bulletwood_wood_kerfcase_wireless_charger_charging_block_grande.png" style="width:100%">
-                    <div class="text">Bulletwood</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="img/cherry_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:100%">
-                    <div class="text">Cherry</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="img/maple_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:100%">
-                    <div class="text">Maple</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="img/walnut_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:100%">
-                    <div class="text">Walnut</div>
-                </div>
-
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+        <div class="w3-content w3-display-container" style="max-width:800px">
+            <img class="mySlides" src="img/slider-img-1.jpg" style="width:100%">
+            <img class="mySlides" src="img/slider-img-2.jpeg" style="width:100%">
+            <img class="mySlides" src="img/slider-img-3.jpg" style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
             </div>
-
-            <br>
-
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-            </div>
-
-        </header>
+        </div>
 
         <!-- Benefits Section -->
         <div class="w3-container" style="padding:128px 16px" id="benefits">
