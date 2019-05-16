@@ -48,16 +48,16 @@
         <!-- slideshow -->
         <div class="w3-container" class="slider">
             <div class="w3-content w3-display-container" style="max-width:800px">
-            <img class="mySlides" src="img/slider-img-1.jpg" style="width:100%">
-            <img class="mySlides" src="img/slider-img-2.jpg" style="width:100%">
-            <img class="mySlides" src="img/slider-img-3.jpg" style="width:100%">
-            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-            </div>
+                <img class="mySlides" src="img/slider-img-1.jpg" style="width:100%">
+                <img class="mySlides" src="img/slider-img-2.jpg" style="width:100%">
+                <img class="mySlides" src="img/slider-img-3.jpg" style="width:100%">
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                </div>
             </div>
         </div>
 
@@ -137,14 +137,14 @@
                     <div class="w3-card">
                         <div class="w3-container">
                             <h3>Materials</h3>
-                                <p>(Figured) Walnut</p>
-                                <p>Cherry</p>
-                                <p>(Spalted/Ambrosia) Maple</p>
-                                <p>Sycamore</p>
-                                <p>(African) Mahogany</p>
-                                <p>Bulletwood</p>
-                                <p>Canarywood</p>
-                                <p>Padauk</p>
+                            <p>(Figured) Walnut</p>
+                            <p>Cherry</p>
+                            <p>(Spalted/Ambrosia) Maple</p>
+                            <p>Sycamore</p>
+                            <p>(African) Mahogany</p>
+                            <p>Bulletwood</p>
+                            <p>Canarywood</p>
+                            <p>Padauk</p>
                         </div>
                     </div>
                 </div>
@@ -169,19 +169,23 @@
             <h3 class="w3-center">OUR MODELS</h3>
             <p class="w3-center w3-large">Our many designs</p>
 
-            <div class="w3-row-padding" style="margin-top:64px">
-                <div class="w3-col l3 m6">
-                    <img src="img/bulletwood_wood_kerfcase_wireless_charger_charging_block_grande.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bulletwood model">
-                </div>
-                <div class="w3-col l3 m6">
-                    <img src="img/cherry_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cherry wood model">
-                </div>
-                <div class="w3-col l3 m6">
-                    <img src="img/maple_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Maple wood model">
-                </div>
-                <div class="w3-col l3 m6">
-                    <img src="img/walnut_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Walnut wood model">
-                </div>
+            <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button" onclick="openCharger('charging-blocks')">Charging Blocks</button>
+                <button class="w3-bar-item w3-button" onclick="openCharger('charging-pads')">Charging Pads</button>
+            </div>
+
+            <div id="charging-block" class="city">
+                <h2>Charging Blocks</h2>
+                <img src="img/bulletwood_wood_kerfcase_wireless_charger_charging_block_grande.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bulletwood model">
+                <img src="img/cherry_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cherry wood model">
+                <img src="img/maple_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Maple wood model">
+                <img src="img/walnut_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Walnut wood model">
+            </div>
+
+            <div id="charging-pad" class="city" style="display:none">
+                <h2>Charging Pads</h2>
+                <img src="img/models-img-7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wireless charging pad 1"> 
+                <img src="img/models-img-8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wireless charging pad 2">
             </div>
 
             <div class="w3-row-padding w3-section">
@@ -190,12 +194,6 @@
                 </div>
                 <div class="w3-col l3 m6">
                     <img src="img/models-img-6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Browned wood model">
-                </div>
-                <div class="w3-col l3 m6">
-                    <img src="img/models-img-7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wireless charging pad 1">
-                </div>
-                <div class="w3-col l3 m6">
-                    <img src="img/models-img-8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wireless charging pad 2">
                 </div>
             </div>
         </div>
@@ -271,6 +269,8 @@
         </footer>
 
         <script src="js/slider.js"></script>
+        <script src="js/cream-of-ice.js"></script>
+        <script src="js/cream-of-ice.js"></script>
 
     </body>
 </html>
