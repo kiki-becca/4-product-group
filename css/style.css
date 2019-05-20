@@ -154,3 +154,28 @@ body, html {
   border: 1px solid #ccc;
   border-top: none;
 }
+
+/* section link styling */
+.section a:link {
+  color: #17b0d4; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+.section a:visited {
+  color: #17b0d4;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.section a:hover {
+  color: #17b0d4;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.section a:active {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+}
