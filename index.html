@@ -169,20 +169,38 @@
             <h3 class="w3-center">OUR MODELS</h3>
             <p class="w3-center w3-large">Our many designs</p>
 
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openCharger(event, 'Blocks')" id="defaultOpen">Charging Blocks</button>
+                <button class="tablinks" onclick="openCharger(event, 'Pads')">Charging Pads</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="blocks" class="tabcontent">
+                <h3>Charging Blocks</h3>
+                <p>charging blocks are so cool</p>
+            </div>
+
+            <div id="pads" class="tabcontent">
+                <h3>Charging Pads</h3>
+                <p>charging pads are even cooler</p> 
+            </div>
+
+
             <div class="w3-bar w3-white">
                 <button class="w3-bar-item w3-button" onclick="openCharger('charging-blocks')">Charging Blocks</button>
                 <button class="w3-bar-item w3-button" onclick="openCharger('charging-pads')">Charging Pads</button>
             </div>
 
-            <div id="charging-block" class="city">
+            <div id="charging-block" class="charger">
                 <h2>Charging Blocks</h2>
-                <img src="img/bulletwood_wood_kerfcase_wireless_charger_charging_block_grande.png" style="width:25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bulletwood model">
-                <img src="img/cherry_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cherry wood model">
-                <img src="img/maple_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Maple wood model">
-                <img src="img/walnut_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Walnut wood model">
+                <img src="img/bulletwood_wood_kerfcase_wireless_charger_charging_block_grande.png" style="width:24%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bulletwood Model">
+                <img src="img/cherry_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:24%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cherrywood Model">
+                <img src="img/maple_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:24%" onclick="onClick(this)" class="w3-hover-opacity" alt="Maplewood Model">
+                <img src="img/walnut_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:24%" onclick="onClick(this)" class="w3-hover-opacity" alt="Walnutwood Model">
             </div>
 
-            <div id="charging-pad" class="city" style="display:none">
+            <div id="charging-pad" class="charger" style="display:none">
                 <h2>Charging Pads</h2>
                 <img src="img/models-img-7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wireless charging pad 1"> 
                 <img src="img/models-img-8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wireless charging pad 2">
@@ -190,10 +208,10 @@
 
             <div class="w3-row-padding w3-section">
                 <div class="w3-col l3 m6">
-                    <img src="img/models-img-5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dark wood model">
+                    <img src="img/models-img-5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Darkwood Model">
                 </div>
                 <div class="w3-col l3 m6">
-                    <img src="img/models-img-6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Browned wood model">
+                    <img src="img/models-img-6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Brownedwood Model">
                 </div>
             </div>
         </div>
