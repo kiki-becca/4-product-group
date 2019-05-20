@@ -203,3 +203,24 @@ body, html {
 .w3-hover-theme:hover {color:#fff !important; background-color:#92b558 !important}
 .w3-hover-text-theme:hover {color:#92b558 !important}
 .w3-hover-border-theme:hover {border-color:#92b558 !important}
+
+/* header color theme styling */
+.section h2 {
+    /* Google font applied here */
+    color: #769642;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1.25px;
+    font-size: 2epx;
+    margin-top: 0;
+    padding-top: 2%;
+}
+
+.section h3 {
+    /* Google font applied here */
+    color: #587131;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1.25px;
+    font-size: 2epx;
+    margin-top: 0;
+    padding-top: 2%;
+}
