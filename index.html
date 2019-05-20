@@ -169,22 +169,22 @@
             <h3 class="w3-center">OUR MODELS</h3>
             <p class="w3-center w3-large">Our many designs</p>
 
-            <!-- Tab links -->
-            <div class="tab">
-                <button class="tablinks" onclick="openCharger(event, 'Blocks')" id="defaultOpen">Charging Blocks</button>
-                <button class="tablinks" onclick="openCharger(event, 'Pads')">Charging Pads</button>
+            <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button" onclick="openCharger('Block')">Block</button>
+                <button class="w3-bar-item w3-button" onclick="openCharger('Pad')">Pad</button>
             </div>
 
-            <!-- Tab content -->
-            <div id="Blocks" class="tabcontent">
-                <h3>Charging Blocks</h3>
-                <p>charging blocks are so cool</p>
+            <div id="Block" class="w3-container charger">
+                <h2>Block</h2>
+                <p>London is the capital city of England.</p>
             </div>
 
-            <div id="Pads" class="tabcontent">
-                <h3>Charging Pads</h3>
-                <p>charging pads are even cooler</p> 
+            <div id="Pad" class="w3-container charger" style="display:none">
+                <h2>Pad</h2>
+                <p>Paris is the capital of France.</p> 
             </div>
+
+
         </div>
 
         <!-- Modal for full size images on click-->
@@ -258,8 +258,8 @@
         </footer>
 
         <script src="js/slider.js"></script>
-        <script src="js/cream-of-ice.js"></script>
-        <script src="js/cream-of-ice.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/tabs.js"></script>
 
     </body>
 </html>
