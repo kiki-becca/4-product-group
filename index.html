@@ -18,6 +18,9 @@
         <div class="w3-top">
             <div class="w3-bar w3-white w3-card" id="myNavbar">
                 <a href="#home" class="navbar-left"><img src="img/loogoo.jpg"></a>
+                <a href="#home" class="w3-bar-item w3-button w3-wide" src="img/logo.jpg" style="z-index: 10000 !important;"></a>
+                <a href="#home" class="w3-bar-item w3-button w3-wide" src="img/loogoo.jpg"></a>
+
                 <!-- Right-sided navbar links -->
                 <div class="w3-right w3-hide-small">
                     <a href="#benefits" class="w3-bar-item w3-button"><i class="fa fa-check-circle-o"></i> Benefits</a>
@@ -136,131 +139,137 @@
                     <div class="w3-card main-cards">
                         <div class="w3-container section-h3">
                             <h3>Materials</h3>
-                            <p>(Figured) Walnut</p>
-                            <p>Cherry</p>
-                            <p>(Spalted/Ambrosia) Maple</p>
-                            <p>Sycamore</p>
-                            <p>(African) Mahogany</p>
-                            <p>Bulletwood</p>
-                            <p>Canarywood</p>
-                            <p>Padauk</p>
+                            <div class="w3-col l3 m6 w3-margin-bottom">
+                                <div class="w3-card">
+                                    <div class="w3-container">
+                                        <h3 class="section-h3">Materials</h3>
+                                        <p>(Figured) Walnut</p>
+                                        <p>Cherry</p>
+                                        <p>(Spalted/Ambrosia) Maple</p>
+                                        <p>Sycamore</p>
+                                        <p>(African) Mahogany</p>
+                                        <p>Bulletwood</p>
+                                        <p>Canarywood</p>
+                                        <p>Padauk</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-col l3 m3 w3-margin-bottom">
+                                <div class="w3-card main-cards">
+                                    <div class="w3-container">
+                                        <h3 class="section-h3">Special Notes</h3>
+                                        <p>Charges on device contact</p>
+                                        <p>Compatible with all Qi-enabled mobile devices</p>
+                                        <p>Fast Charges with Apple and Samsung devices</p>
+                                        <p>Works with most cases up to 3 mm thick</p>
+                                        <p>Compatible with all KerfCase iPhone cases</p>
+                                        <p>Charges via USBC to computer or optional power supply</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w3-col l3 m3 w3-margin-bottom">
-                    <div class="w3-card main-cards">
-                        <div class="w3-container">
-                            <h3 class="section-h3">Special Notes</h3>
-                            <p>Charges on device contact</p>
-                            <p>Compatible with all Qi-enabled mobile devices</p>
-                            <p>Fast Charges with Apple and Samsung devices</p>
-                            <p>Works with most cases up to 3 mm thick</p>
-                            <p>Compatible with all KerfCase iPhone cases</p>
-                            <p>Charges via USBC to computer or optional power supply</p>
+            </div>
+        </div>
+
+                    <!-- Models Section -->
+                    <div class="w3-container" style="padding:128px 16px" id="models">
+                        <h3 class="w3-center section-h3">OUR MODELS</h3>
+                        <p class="w3-center w3-large">Our many designs</p>
+                        <div class="w3-bar w3-black">
+                            <button class="w3-bar-item w3-button" onclick="openCharger('Block')">Charging Blocks</button>
+                            <button class="w3-bar-item w3-button" onclick="openCharger('Pad')">Charging Pads</button>
+                        </div>
+
+                        <div id="Block" class="w3-container charger section">
+                            <h2 class="section-h2"><a href="https://kerfcase.com/products/wireless-phone-charger" target="_blank">Charging Blocks</a></h2>
+                            <img src="img/bulletwood_wood_kerfcase_wireless_charger_charging_block_grande.png" style="width:24%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bulletwood Model">
+                            <img src="img/cherry_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:24%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cherrywood Model">
+                            <img src="img/maple_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:24%" onclick="onClick(this)" class="w3-hover-opacity" alt="Maplewood Model">
+                            <img src="img/walnut_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:24%" onclick="onClick(this)" class="w3-hover-opacity" alt="Walnutwood Model">
+                        </div>
+
+                        <div id="Pad" class="w3-container charger section" style="display:none">
+                            <h2 class="section-h2"><a href="https://kerfcase.com/products/wireless-phone-charger">Charging Pads</a></h2> 
+                            <img src="img/models-img-7.jpg" style="width:45%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wireless charging pad 1"> 
+                            <img src="img/models-img-8.jpg" style="width:45%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wireless charging pad 2">
+                        </div>                
+                    </div>
+
+                    <!-- Modal for full size images on click-->
+                    <div id="modal01" class="w3-modal w3-theme1" onclick="this.style.display='none'">
+                        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+                        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                            <img id="img01" class="w3-image">
+                            <p id="caption" class="w3-opacity w3-large"></p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Models Section -->
-        <div class="w3-container" style="padding:128px 16px" id="models">
-            <h3 class="w3-center section-h3">OUR MODELS</h3>
-            <p class="w3-center w3-large">Our many designs</p>
-
-            <div class="w3-bar w3-black">
-                <button class="w3-bar-item w3-button" onclick="openCharger('Block')">Charging Blocks</button>
-                <button class="w3-bar-item w3-button" onclick="openCharger('Pad')">Charging Pads</button>
-            </div>
-
-            <div id="Block" class="w3-container charger section">
-                <h2 class="section-h2"><a href="https://kerfcase.com/products/wireless-phone-charger" target="_blank">Charging Blocks</a></h2>
-                <img src="img/bulletwood_wood_kerfcase_wireless_charger_charging_block_grande.png" style="width:24%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bulletwood Model">
-                <img src="img/cherry_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:24%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cherrywood Model">
-                <img src="img/maple_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:24%" onclick="onClick(this)" class="w3-hover-opacity" alt="Maplewood Model">
-                <img src="img/walnut_wood_kerfcase_wireless_fast_charging_block_grande.png" style="width:24%" onclick="onClick(this)" class="w3-hover-opacity" alt="Walnutwood Model">
-            </div>
-
-            <div id="Pad" class="w3-container charger section" style="display:none">
-                <h2 class="section-h2"><a href="https://kerfcase.com/products/wireless-phone-charger">Charging Pads</a></h2> 
-                <img src="img/models-img-7.jpg" style="width:45%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wireless charging pad 1"> 
-                <img src="img/models-img-8.jpg" style="width:45%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wireless charging pad 2">
-            </div>                
-        </div>
-
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-theme1" onclick="this.style.display='none'">
-            <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                <img id="img01" class="w3-image">
-                <p id="caption" class="w3-opacity w3-large"></p>
-            </div>
-        </div>
-
-        <!-- Priorities Section -->
-        <div class="w3-container w3-light-grey w3-padding-64" id="priorities">
-            <div class="w3-row-padding">
-                <div class="w3-col m6 section-h3">
-                    <h3>Our Priorities</h3>
-                    <p>The real wood we use is sourced locally and sustainably, and whenever possible reclaimed from damaged local trees. Every piece of wood has a story, whether it's a piece of reclaimed flooring, or a beautiful burled wood from a local tree which was damaged in a storm. The craftsman's woodworking is a continuation of this story, connecting you to the history of this natural material.</p>
-                </div>
-                <div class="w3-col m6">
-                    <p class="w3-wide"><i class="fa fa-envira w3-margin-right"></i>Sustainable</p>
-                    <div class="w3-grey">
-                        <div class="w3-container w3-dark-grey w3-center" style="width:95%">95%</div>
+                    <!-- Priorities Section -->
+                    <div class="w3-container w3-light-grey w3-padding-64" id="priorities">
+                        <div class="w3-row-padding">
+                            <div class="w3-col m6 section-h3">
+                                <h3>Our Priorities</h3>
+                                <p>The real wood we use is sourced locally and sustainably, and whenever possible reclaimed from damaged local trees. Every piece of wood has a story, whether it's a piece of reclaimed flooring, or a beautiful burled wood from a local tree which was damaged in a storm. The craftsman's woodworking is a continuation of this story, connecting you to the history of this natural material.</p>
+                            </div>
+                            <div class="w3-col m6">
+                                <p class="w3-wide"><i class="fa fa-envira w3-margin-right"></i>Sustainable</p>
+                                <div class="w3-grey">
+                                    <div class="w3-container w3-dark-grey w3-center" style="width:95%">95%</div>
+                                </div>
+                                <p class="w3-wide"><i class="fa fa-usd w3-margin-right"></i>Affordable</p>
+                                <div class="w3-grey">
+                                    <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+                                </div>
+                                <p class="w3-wide"><i class="fa fa-certificate w3-margin-right"></i>Genuine</p>
+                                <div class="w3-grey">
+                                    <div class="w3-container w3-dark-grey w3-center" style="width:100%">100%</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="w3-wide"><i class="fa fa-usd w3-margin-right"></i>Affordable</p>
-                    <div class="w3-grey">
-                        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+
+                    <!-- Contact Section -->
+                    <div class="w3-container w3-white section-h3" style="padding:128px 16px" id="contact">
+                        <h3 class="w3-center">CONTACT</h3>
+                        <p class="w3-center w3-large">Let's get in touch. Send us a message:</p>
+                        <div style="margin-top:48px">
+                            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 201 N Braddock Ave #334, Pittsburgh, PA 15208</p>
+                            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1-412-447-5602</p>
+                            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@kerfcase.com</p>
+                            <br>
+                            <form action="/action_page.php" target="_blank">
+                                <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                                <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                                <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                                <p>
+                                    <button class="w3-button w3-black" type="submit">
+                                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                                    </button>
+                                </p>
+                            </form>
+                        </div>
                     </div>
-                    <p class="w3-wide"><i class="fa fa-certificate w3-margin-right"></i>Genuine</p>
-                    <div class="w3-grey">
-                        <div class="w3-container w3-dark-grey w3-center" style="width:100%">100%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Contact Section -->
-        <div class="w3-container w3-white section-h3" style="padding:128px 16px" id="contact">
-            <h3 class="w3-center">CONTACT</h3>
-            <p class="w3-center w3-large">Let's get in touch. Send us a message:</p>
-            <div style="margin-top:48px">
-                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 201 N Braddock Ave #334, Pittsburgh, PA 15208</p>
-                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1-412-447-5602</p>
-                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@kerfcase.com</p>
-                <br>
-                <form action="/action_page.php" target="_blank">
-                    <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-                    <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-                    <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-                    <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-                    <p>
-                        <button class="w3-button w3-black" type="submit">
-                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                        </button>
-                    </p>
-                </form>
-            </div>
-        </div>
+                    <!-- Footer -->
+                    <footer class="w3-center w3-black w3-padding-64">
+                        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+                        <div class="w3-xlarge w3-section">
+                            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                            <i class="fa fa-instagram w3-hover-opacity"></i>
+                            <i class="fa fa-snapchat w3-hover-opacity"></i>
+                            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                            <i class="fa fa-twitter w3-hover-opacity"></i>
+                            <i class="fa fa-linkedin w3-hover-opacity"></i>
+                        </div>
+                        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+                    </footer>
 
-        <!-- Footer -->
-        <footer class="w3-center w3-black w3-padding-64">
-            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-            <div class="w3-xlarge w3-section">
-                <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                <i class="fa fa-instagram w3-hover-opacity"></i>
-                <i class="fa fa-snapchat w3-hover-opacity"></i>
-                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                <i class="fa fa-twitter w3-hover-opacity"></i>
-                <i class="fa fa-linkedin w3-hover-opacity"></i>
-            </div>
-            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-        </footer>
+                    <script src="js/slider.js"></script>
+                    <script src="js/modal.js"></script>
+                    <script src="js/tabs.js"></script>
 
-        <script src="js/slider.js"></script>
-        <script src="js/modal.js"></script>
-        <script src="js/tabs.js"></script>
-
-    </body>
-</html>
+                    </body>
+                </html>
